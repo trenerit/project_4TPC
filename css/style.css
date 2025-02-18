@@ -1,0 +1,47 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+.header-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../assets/bg-header-small.webp") center/cover;
+  color: #fff;
+}
+.header-style::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5568627451);
+  position: absolute;
+}
+
+h1 {
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+@use 'variables' as colors;
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+.header-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../assets/bg-header-small.webp') center/cover;
+    color: #fff;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: #0000008e;
+        position: absolute;
+    }
+}
+
+.header-style::after {}
+
+h1 {
+   font-weight: normal;
+   text-align: center;
+   padding: 10px;
+   z-index: 1;
+
+   @media screen and (min-width: 768px) {
+    font-size: 3.5rem;
+   }
+   
+   @media screen and (min-width: 1024px) {
+    font-size: 5rem;
+   }
+}
