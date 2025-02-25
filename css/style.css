@@ -8,14 +8,21 @@ html {
 
 body {
   margin: 0;
+  height: 200vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .header-style {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("../assets/bg-header-small.webp") center/cover;
+  background: url("../assets/bg-header-small.webp") center/cover fixed;
   color: #fff;
 }
 .header-style::before {
@@ -42,6 +49,20 @@ h1 {
   h1 {
     font-size: 5rem;
   }
+}
+
+.btn-header {
+  z-index: 1;
+  width: 140px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(54, 89, 57, 0.7254901961);
+  border-radius: 6px;
+  font-size: 1.8rem;
+  transition: 0.5s;
+}
+.btn-header:hover {
+  background-color: #365939;
 }
 
 /*# sourceMappingURL=style.css.map */
