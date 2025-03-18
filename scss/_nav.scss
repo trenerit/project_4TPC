@@ -12,6 +12,14 @@
     z-index: 2;
     padding: 0 20px;
     transition: .5s;
+    border-bottom: 1px dotted whitesmoke;
+
+    @include mq(2500px) {
+        width: 70%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
 
     &-logo {
         flex-basis: 50%;
