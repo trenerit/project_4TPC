@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 .nav {
     display: flex;
     align-items: center;

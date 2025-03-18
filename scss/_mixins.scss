@@ -1,0 +1,19 @@
+$bp-m: 768px;
+$bp-l: 1024px;
+
+@mixin mq($symbol: 'm') {
+
+    $bp: 0;
+
+    @if $symbol == 'm' {
+        $bp: $bp-m;
+    } @else if $symbol == 'l' {
+        $bp: $bp-l;
+    } @else {
+        $bp: $symbol;
+    }
+    
+    @media screen and (min-width: $bp) {
+        @content;
+    }
+}
