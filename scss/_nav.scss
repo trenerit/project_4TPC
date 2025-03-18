@@ -16,9 +16,11 @@
     &-logo {
         flex-basis: 50%;
         font-size: 2rem;
-        @media screen and (min-width: 768px) {
+        
+        @include mq {
             font-size: 2.6rem;
-           }
+        }
+        
         text-transform: uppercase;
         letter-spacing: .5rem;
     }
