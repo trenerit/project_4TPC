@@ -3,12 +3,16 @@
 const modCss = (event) => {
    const scrollY =  window.scrollY;
    const nav = document.querySelector('.nav');
-   const bgColor = '#5A6E73';
+   // const bgColor = '#5A6E73';
 
    if(scrollY >= 200) {
-      nav.style.backgroundColor = bgColor;
+      nav.classList.add('nav-scroll');
+      // nav.style.backgroundColor = bgColor;
+      // nav.style.padding = '0 20px';
    } else {
-      nav.style.backgroundColor = 'transparent';
+      nav.classList.remove('nav-scroll');
+      // nav.style.backgroundColor = 'transparent';
+      // nav.style.padding = '14px 20px';
    }
 }
 
