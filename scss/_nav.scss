@@ -48,6 +48,32 @@
         
         .material-symbols-outlined {
             font-size: 5rem;
+
+            @include mq('l') {
+                display: none;
+            }
         }
+    }
+}
+
+.menu-ul {
+    display: none;
+    @include mq('l') {
+        display: flex;
+    }
+    list-style: none;
+    font-size: 1.8rem;
+
+    li {
+        flex-basis: 22%;
+        text-align: center;
+    }
+
+    a {
+        transition: .5s;
+    }
+
+    a:hover {
+        color: $color-red;
     }
 }

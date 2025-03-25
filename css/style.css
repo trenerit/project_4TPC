@@ -62,6 +62,32 @@ a {
 .nav-menu .material-symbols-outlined {
   font-size: 5rem;
 }
+@media screen and (min-width: 1024px) {
+  .nav-menu .material-symbols-outlined {
+    display: none;
+  }
+}
+
+.menu-ul {
+  display: none;
+  list-style: none;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 1024px) {
+  .menu-ul {
+    display: flex;
+  }
+}
+.menu-ul li {
+  flex-basis: 22%;
+  text-align: center;
+}
+.menu-ul a {
+  transition: 0.5s;
+}
+.menu-ul a:hover {
+  color: #D94E4E;
+}
 
 .header-style {
   display: flex;
