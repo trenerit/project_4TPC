@@ -1,24 +1,28 @@
 @use 'mixins' as *;
 
 .nav {
-    display: flex;
-    align-items: center;
-    height: 15vh;
-    width: 100%;
     color: #fff;
     background-color: transparent;
     position: fixed;
+    width: 100%;
     top: 0;
     z-index: 2;
     padding: 0 20px;
     transition: .5s;
     border-bottom: 1px dotted whitesmoke;
 
-    @include mq(2500px) {
-        width: 70%;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
+    &-content {
+        display: flex;
+        align-items: center;
+        height: 15vh;
+        width: 100%;
+        
+        @include mq(2500px) {
+            width: 70%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
     }
 
     &-logo {

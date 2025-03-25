@@ -18,21 +18,24 @@ a {
 }
 
 .nav {
-  display: flex;
-  align-items: center;
-  height: 15vh;
-  width: 100%;
   color: #fff;
   background-color: transparent;
   position: fixed;
+  width: 100%;
   top: 0;
   z-index: 2;
   padding: 0 20px;
   transition: 0.5s;
   border-bottom: 1px dotted whitesmoke;
 }
+.nav-content {
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+}
 @media screen and (min-width: 2500px) {
-  .nav {
+  .nav-content {
     width: 70%;
     margin: 0 auto;
     left: 0;
