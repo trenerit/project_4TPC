@@ -17,3 +17,11 @@ const modCss = (event) => {
 }
 
 window.addEventListener('scroll', modCss);
+
+const menuSmall = document.querySelector('#menu-small');
+
+menuSmall.addEventListener('click', () => {
+
+   
+
+});

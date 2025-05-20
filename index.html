@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scripts.js" defer></script>
     <title>Filmy przyrodnicze</title>
@@ -15,9 +15,12 @@
     <nav class="nav">
         <div class="nav-content">
             <div class="nav-logo"><a href="index.html">Obiektyw przyrody</a></div>
+            <!-- <div class="nav-menu menu-hide"> -->
+                <!-- menu-hide usunięto poniewaz chcemy widzieć style dla okna modalnego z pozycjami menu -->
             <div class="nav-menu">
-                <span class="material-symbols-outlined">menu</span>
+                <span id="menu-small" class="material-symbols-outlined">menu</span>
                 <ul class="menu-ul">
+                    <span id="menu-small" class="material-symbols-outlined">close</span>
                     <li><a href="#">O nas</a></li>
                     <li><a href="#">Filmy</a></li>
                     <li><a href="#">Lokalizacja</a></li>

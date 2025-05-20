@@ -57,23 +57,66 @@
 }
 
 .menu-ul {
-    display: none;
-    @include mq('l') {
-        display: flex;
-    }
+    margin-block-start: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
     list-style: none;
     font-size: 1.8rem;
+    background-color: black;
+    color: whitesmoke;
+    
+    padding: 0;
+    
+    ul {
+        margin: 0;
+        height: 100%;
+    }
+
+    span {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 
     li {
-        flex-basis: 22%;
-        text-align: center;
+        flex-basis: 20%;
+        width: 100%;
+        font-size: 2.8rem;
+    }
+
+    @include mq('l') {
+    
+        li {
+            flex-basis: 22%;
+            flex-direction: row;
+            text-align: center;
+        }
+    
     }
 
     a {
+        width: 100%;
+        height: 100%;
         transition: .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     a:hover {
         color: $color-red;
     }
+}
+
+.menu-hide {
+    display: none;
 }
