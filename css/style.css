@@ -85,6 +85,11 @@ a {
   color: whitesmoke;
   padding: 0;
 }
+@media screen and (min-width: 1024px) {
+  .menu-ul {
+    display: none;
+  }
+}
 .menu-ul ul {
   margin: 0;
   height: 100%;
@@ -120,6 +125,24 @@ a {
 
 .menu-hide {
   display: none;
+}
+
+.small-menu {
+  display: flex;
+}
+@media screen and (min-width: 1024px) {
+  .small-menu {
+    display: none;
+  }
+}
+
+.big-menu {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .big-menu {
+    display: flex;
+  }
 }
 
 .header-style {

@@ -20,8 +20,12 @@ window.addEventListener('scroll', modCss);
 
 const menuSmall = document.querySelector('#menu-small');
 
+const spanAll = document.querySelectorAll('nav span');
+
+
+
 menuSmall.addEventListener('click', () => {
 
-   
+
 
 });
