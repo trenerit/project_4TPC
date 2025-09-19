@@ -18,14 +18,21 @@ const modCss = (event) => {
 
 window.addEventListener('scroll', modCss);
 
-const menuSmall = document.querySelector('#menu-small');
+const hamburger = document.querySelector('#hamburger');
 
 const spanAll = document.querySelectorAll('nav span');
 
+const menuPopUp = document.querySelector('.menu-ul');
 
 
-menuSmall.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
+   
+   menuPopUp.style.display = 'flex';
+   
+});
 
+const close = document.querySelector('#close');
 
-
+close.addEventListener('click', () => {
+   menuPopUp.style.display = 'none';
 });
