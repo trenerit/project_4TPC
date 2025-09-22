@@ -37,7 +37,7 @@
         letter-spacing: .5rem;
         
         @include mq {
-            font-size: 2.6rem;
+            font-size: 3.4rem;
         }
     }
         
@@ -127,6 +127,7 @@
 
 .small-menu {
     display: flex;
+    justify-content: right;
 
     @include mq ('l') {
         display: none;
@@ -136,7 +137,22 @@
 .big-menu {
     display: none;
 
-    @include mq ('l') {
+    @include mq('l') {
         display: flex;
+        flex-basis: 50%;
+        font-size: 2.4rem;
+    }
+
+    .menu-ul-big {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        // border: 1px solid red;
+
+        li {
+            // flex-basis: 15%;
+            margin-right: 45px;
+        }
     }
 }

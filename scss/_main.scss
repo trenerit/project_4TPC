@@ -1,0 +1,14 @@
+section {
+    min-height: 100vh;
+    padding-top: 40px;
+    
+    h2 {
+        font-size: 3.6rem;
+        text-align: center;
+    }
+
+    &:nth-of-type(even) {
+        background-color: lightgray;
+    }
+
+}
