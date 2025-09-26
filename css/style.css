@@ -17,6 +17,37 @@ a {
   color: inherit;
 }
 
+p {
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 760px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
 .nav {
   color: #fff;
   background-color: transparent;

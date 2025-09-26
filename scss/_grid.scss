@@ -1,0 +1,26 @@
+@use 'mixins' as *;
+
+.container {
+    
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+
+    @include mq {
+        width: 760px;
+    }
+
+    @include mq('l') {
+        width: 1000px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include mq {
+        flex-direction: row;
+    }
+}
