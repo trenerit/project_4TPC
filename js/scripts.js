@@ -36,3 +36,13 @@ const close = document.querySelector('#close');
 close.addEventListener('click', () => {
    menuPopUp.style.display = 'none';
 });
+
+const aClose = document.querySelectorAll('.small-menu a');
+
+aClose.forEach((elem) => {
+   
+   elem.addEventListener('click', () => {
+      menuPopUp.style.display = 'none';
+   });
+   
+});

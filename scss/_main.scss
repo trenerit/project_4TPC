@@ -1,10 +1,14 @@
 section {
     min-height: 100vh;
-    padding-top: 40px;
+    padding-top: 70px;
     
     h2 {
         font-size: 3.6rem;
         text-align: center;
+    }
+
+    h3 {
+        font-size: 2.6rem;
     }
 
     &:nth-of-type(even) {
