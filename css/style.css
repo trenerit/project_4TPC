@@ -292,4 +292,8 @@ section:nth-of-type(even) {
   background-color: lightgray;
 }
 
+#films iframe {
+  padding: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
