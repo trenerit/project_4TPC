@@ -24,3 +24,47 @@
         flex-direction: row;
     }
 }
+
+.col {
+    width: 100%;
+
+    &-50m {
+        @include mq {
+            flex: 0 0 50%;
+        }
+    }
+    
+    &-33m {
+        @include mq {
+            flex: 0 0 33.333333%;
+        }
+    }
+    
+    &-25m {
+        @include mq {
+            flex: 0 0 25%;
+        }
+    }
+    
+
+
+    &-50l {
+        @include mq('l') {
+            flex: 0 0 50%;
+        }
+    }
+    
+    &-33l {
+        @include mq('l') {
+            flex: 0 0 33.333333%;
+        }
+    }
+    
+    &-25l {
+        @include mq('l') {
+            flex: 0 0 25%;
+        }
+    }
+
+
+}
